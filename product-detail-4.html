@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./image/loader-img.gif"
+      type="image/x-icon"
+    />
+    <title>Website bán sách</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+      <div class="header-1">
+        <a href="index.html" class="logo">
+          <i class="fas fa-book"></i> Kiên Book
+        </a>
+
+        <form action="" class="search-form">
+          <input
+            type="search"
+            name=""
+            placeholder="Tìm kiếm..."
+            id="search-box"
+          />
+          <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+          <div id="search-btn" class="fas fa-search"></div>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <div id="login-btn" class="fas fa-user"></div>
+        </div>
+      </div>
+
+      <div class="header-2">
+        <nav class="navbar">
+          <a href="index.html">Trang chủ</a>
+          <a href="#">Sản phẩm</a>
+          <a href="contact.html">Liên hệ</a>
+          <a href="#">Về chúng tôi</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- bottom navbar  -->
+
+    <nav class="bottom-navbar">
+      <a href="index.html" class="fas fa-home"></a>
+      <a href="#" class="fas fa-list"></a>
+      <a href="contact.html" class="fas fa-comments"></a>
+      <a href="#" class="fas fa-tags"></a>
+    </nav>
+
+    <!-- login form  -->
+
+    <div class="login-form-container">
+      <div id="close-login-btn" class="fas fa-times"></div>
+
+      <form action="">
+        <h3>Đăng nhập</h3>
+        <span>Email</span>
+        <input
+          type="email"
+          name=""
+          class="box"
+          placeholder="Email"
+          id=""
+          required
+          oninvalid="setCustomValidity('Vui lòng điền email của bạn')"
+          oninput="setCustomValidity('')"
+        />
+        <span>Mật khẩu</span>
+        <input
+          type="password"
+          name=""
+          class="box"
+          placeholder="Mật khẩu"
+          id=""
+          oninvalid="setCustomValidity('Vui lòng điền mật khẩu của bạn')"
+          oninput="setCustomValidity('')"
+        />
+        <div class="checkbox">
+          <input type="checkbox" name="" id="remember-me" />
+          <label for="remember-me"> Ghi nhớ</label>
+        </div>
+        <input type="submit" value="Đăng nhập" class="btn" />
+        <p>Quên mật khẩu ? <a href="#">click tại đây</a></p>
+        <p>Không có tài khoản ? <a href="#">Đăng kí</a></p>
+      </form>
+    </div>
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="row">
+        <div class="content">
+          <div class="product-detail">
+            <div class="product-detail-image">
+              <img src="./image/book-4.jpg" alt="" class="zoom" />
+            </div>
+            <div class="product-detail-content">
+              <div class="product-detail-name">
+                <h2>
+                  Combo 2Q: Tớ Học Lập Trình - Làm Quen Với Python + Clean code
+                  – Mã sạch và con đường trở thành lập trình viên giỏi
+                </h2>
+              </div>
+              <div class="product-detail-rate">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <div class="product-detail-price">
+                <span class="price-title">Giá: </span>
+                <span class="price">452.500₫</span>
+              </div>
+              <div class="product-detail-actions">
+                <div class="product-detail-quantity">
+                  <div class="quantity-title">Số lượng:</div>
+                  <button class="btn-qty" onclick="minusCart()">-</button>
+                  <input
+                    type="text"
+                    id="quantity"
+                    name="quantity"
+                    value="1"
+                    min="1"
+                    class="quantity-input"
+                  />
+                  <button class="btn-qty" onclick="plusCart()">+</button>
+                </div>
+                <div class="product-detail-addToCart mt-3">
+                  <button class="btn btn-cart">Thêm vào giỏ</button>
+                  <button class="btn btn-buynow">
+                    <a href="cart-detail.html">Mua ngay</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-detail-description">
+            <div class="row">
+              <div class="col-12">
+                <div class="product-description">
+                  <div class="box-detail-title">
+                    <h2>Mô tả sản phẩm</h2>
+                  </div>
+                  <div class="description-content">
+                    <h2>
+                      Combo 2Q: Tớ Học Lập Trình - Làm Quen Với Python + Clean
+                      code – Mã sạch và con đường trở thành lập trình viên giỏi
+                    </h2>
+                    <p>
+                      Hiện nay, lập trình viên là một trong những nghề nghiệp
+                      được nhiều người lựa chọn theo đuổi và gắn bó. Đây là công
+                      việc đòi hỏi sự tỉ mỉ, nhiều công sức nhưng mang lại giá
+                      trị cao và một tương lai công việc hứa hẹn. Là một trong
+                      số những chuyên gia giàu kinh nghiệm, điêu luyện và lành
+                      nghề trong ngành, tác giả đã đúc rút từ kinh nghiệm của
+                      mình, viết về những tình huống trong thực tế, đôi khi có
+                      thể trái ngược với lý thuyết để xây dựng nên cuốn cẩm nang
+                      này, nhằm hỗ trợ những người đang muốn trở thành một lập
+                      trình viên chuyên nghiệp.
+                    </p>
+                    <p>
+                      Cuốn sách được nhiều lập trình viên đánh giá là quyển sách
+                      giá trị nhất mà họ từng đọc trong sự nghiệp của mình. Cuốn
+                      sách hướng dẫn cách để viết những đoạn mã có thể hoạt động
+                      tốt, cũng như truyền tải được ý định của người viết nên
+                      chúng.
+                    </p>
+                    <p>
+                      Cuốn sách được chia thành ba phần lớn. Phần đầu tiên mô tả
+                      các nguyên tắc, mô hình và cách thực hành viết mã sạch.
+                      Phần thứ hai gồm nhiều tình huống điển hình với mức độ
+                      phức tạp gia tang không ngừng. Mỗi tình huống là một bài
+                      tập giúp làm sạch mã, chuyển đổi mã có nhiều vấn đề thành
+                      mã có ít vấn đề hơn. Và phần cuối là tuyển tập rất nhiều
+                      những dấu hiệu của mã có vấn đề, những tìm tòi, suy nghiệm
+                      từ thực tiễn được đúc rút qua cách tình huống điển hình.
+                    </p>
+                    <p>
+                      Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện
+                      hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa
+                      chỉ giao hàng mà có thể phát sinh thêm chi phí khác như
+                      phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu
+                      (đối với đơn hàng giao từ nước ngoài có giá trị trên 1
+                      triệu đồng).....
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- home section ense  -->
+
+    <!-- deal section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>links</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i> Trang chủ </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> Sản phẩm </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> Liên hệ </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> Về chúng tôi </a>
+        </div>
+
+        <div class="box">
+          <h3>Thông tin liên hệ</h3>
+          <a href="#"> <i class="fas fa-phone"></i> +84 912345678 </a>
+          <a href="#">
+            <i class="fas fa-envelope"></i> DH52101018@stu.edu.vn
+          </a>
+        </div>
+        <div class="box">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6592.4985499755685!2d106.6789931371774!3d10.74041089759156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f62a90e5dbd%3A0x674d5126513db295!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgU8OgaSBHw7Ju!5e0!3m2!1svi!2s!4v1714125058390!5m2!1svi!2s"
+            width="100%"
+            height="250"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-github"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-whatsapp"></a>
+      </div>
+
+      <div class="credit">
+        Tên: Ôn Chung Kiên | MSSV: DH52101018 | Lớp: D21_TH01
+      </div>
+    </section>
+
+    <button class="scrollTop">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+    <!-- footer section ends -->
+
+    <!-- loader  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.1.0/medium-zoom.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
