@@ -753,6 +753,7 @@ section{
     border-radius: 100%;
     cursor: pointer;
     transition: .3s;
+    z-index: 9999;
 }
 
 .scrollTop:hover{
@@ -986,6 +987,14 @@ section{
   .stars i{
     color: var(--green);
   }
+  .medium-zoom--opened .medium-zoom-overlay {
+    z-index: 9999;
+  }
+  
+  .medium-zoom-overlay + img {
+    z-index: 9999;
+  }
+  
 /* media queries  */
 
 @media (max-width:991px){
@@ -1086,6 +1095,9 @@ section{
     }
     .description-content{
         text-align: left;
+    }
+    .scrollTop{
+        bottom: 60px;
     }
 }
 
